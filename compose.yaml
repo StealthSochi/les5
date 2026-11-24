@@ -22,9 +22,9 @@ services:
       timeout: 5s
       retries: 20
  web:
-    #build:
-      #dockerfile: Dockerfile.python
-    image: cr.yandex/crprck1qpb2i4nijkgta/shvirtd-example-python-web:latest
+    build:
+      dockerfile: Dockerfile.python
+    #image: cr.yandex/crprck1qpb2i4nijkgta/shvirtd-example-python-web:latest
     restart: always
     environment:
       DB_HOST: 172.20.0.10
